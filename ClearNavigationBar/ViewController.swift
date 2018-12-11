@@ -12,9 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.backgroundColor = .red
+        
+        let rightBtn = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(ViewController.btnTapped))
+        self.navigationItem.rightBarButtonItem = rightBtn
     }
 
+    @objc func btnTapped() {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let addNutritionNoteVC = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        let navController = UINavigationController(rootViewController: addNutritionNoteVC)
+        self.navigationController?.pushViewController(navController, animated: true)
+        print("✅ Right nav btn tapped, new screen presented.")
+    
+    }
 
 }
 

@@ -14,6 +14,7 @@
 		1045DC9521BFE72000BC5782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1045DC9421BFE72000BC5782 /* Assets.xcassets */; };
 		1045DC9821BFE72000BC5782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1045DC9621BFE72000BC5782 /* LaunchScreen.storyboard */; };
 		1045DCA021BFE7D800BC5782 /* ClearNavExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045DC9F21BFE7D800BC5782 /* ClearNavExtension.swift */; };
+		1045DCA221BFEB3500BC5782 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045DCA121BFEB3500BC5782 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1045DC9721BFE72000BC5782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1045DC9921BFE72000BC5782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1045DC9F21BFE7D800BC5782 /* ClearNavExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearNavExtension.swift; sourceTree = "<group>"; };
+		1045DCA121BFEB3500BC5782 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				1045DC8A21BFE71700BC5782 /* AppDelegate.swift */,
 				1045DC8C21BFE71700BC5782 /* ViewController.swift */,
+				1045DCA121BFEB3500BC5782 /* SecondViewController.swift */,
 				1045DC8E21BFE71700BC5782 /* Main.storyboard */,
 				1045DC9421BFE72000BC5782 /* Assets.xcassets */,
 				1045DC9621BFE72000BC5782 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				1045DC8D21BFE71700BC5782 /* ViewController.swift in Sources */,
 				1045DC8B21BFE71700BC5782 /* AppDelegate.swift in Sources */,
 				1045DC9321BFE71700BC5782 /* ClearNavigationBar.xcdatamodeld in Sources */,
+				1045DCA221BFEB3500BC5782 /* SecondViewController.swift in Sources */,
 				1045DCA021BFE7D800BC5782 /* ClearNavExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
