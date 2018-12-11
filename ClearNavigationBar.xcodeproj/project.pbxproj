@@ -13,6 +13,7 @@
 		1045DC9321BFE71700BC5782 /* ClearNavigationBar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1045DC9121BFE71700BC5782 /* ClearNavigationBar.xcdatamodeld */; };
 		1045DC9521BFE72000BC5782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1045DC9421BFE72000BC5782 /* Assets.xcassets */; };
 		1045DC9821BFE72000BC5782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1045DC9621BFE72000BC5782 /* LaunchScreen.storyboard */; };
+		1045DCA021BFE7D800BC5782 /* ClearNavExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1045DC9F21BFE7D800BC5782 /* ClearNavExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1045DC9421BFE72000BC5782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1045DC9721BFE72000BC5782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1045DC9921BFE72000BC5782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1045DC9F21BFE7D800BC5782 /* ClearNavExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearNavExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1045DC9621BFE72000BC5782 /* LaunchScreen.storyboard */,
 				1045DC9921BFE72000BC5782 /* Info.plist */,
 				1045DC9121BFE71700BC5782 /* ClearNavigationBar.xcdatamodeld */,
+				1045DC9F21BFE7D800BC5782 /* ClearNavExtension.swift */,
 			);
 			path = ClearNavigationBar;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				1045DC8D21BFE71700BC5782 /* ViewController.swift in Sources */,
 				1045DC8B21BFE71700BC5782 /* AppDelegate.swift in Sources */,
 				1045DC9321BFE71700BC5782 /* ClearNavigationBar.xcdatamodeld in Sources */,
+				1045DCA021BFE7D800BC5782 /* ClearNavExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
