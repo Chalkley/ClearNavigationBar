@@ -15,14 +15,21 @@ class ViewController: UIViewController {
         view.backgroundColor = .red
         
         let rightBtn = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(ViewController.btnTapped))
+        rightBtn.tintColor = .white
         self.navigationItem.rightBarButtonItem = rightBtn
+        
+        //Mark: Set view1 navigation bar to clear
+        if let navController = navigationController {
+            System.clearNavigationBar(forBar: navController.navigationBar)
+            navController.view.backgroundColor = .clear 
+        }
     }
 
     @objc func btnTapped() {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let addNutritionNoteVC = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
-        let navController = UINavigationController(rootViewController: addNutritionNoteVC)
-        self.navigationController?.pushViewController(navController, animated: true)
+        let secondVC = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        let navController = UINavigationController(rootViewController: secondVC)
+        self.navigationController?.present(navController, animated: true)
         print("✅ Right nav btn tapped, new screen presented.")
     
     }

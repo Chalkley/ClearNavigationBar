@@ -12,19 +12,28 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .blue
+        
+        let backBtn = UIBarButtonItem(title: "Back", style: .done, target: self, action: #selector(SecondViewController.btnTapped))
+        backBtn.tintColor = .white
+        self.navigationItem.leftBarButtonItem = backBtn
+        
+        //Mark: Set view2 navigation bar to clear
+        if let navController = navigationController {
+            System.clearNavigationBar(forBar: navController.navigationBar)
+            navController.view.backgroundColor = .clear
+        }
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func btnTapped() {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainVC = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let navController = UINavigationController(rootViewController: mainVC)
+        self.navigationController?.present(navController, animated: true)
+        print("✅ Left nav btn tapped, new screen presented.")
+        
     }
-    */
 
 }
