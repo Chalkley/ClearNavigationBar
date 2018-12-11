@@ -1,5 +1,5 @@
 Swift ClearNavigationBar
 ===
 
-Extension making nav bar clear
+Extension making UINavigation controller navigation bar clear. 
 ---
